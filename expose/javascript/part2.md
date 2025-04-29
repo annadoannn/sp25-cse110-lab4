@@ -44,7 +44,9 @@
 
 **Q12:**
 <ol type="A">
-  <li>Accessing the value of the name property: <code>student.name</code> </li>
-  <li>Second item</li>
-  <li>Third item</li>
+  <li>Accessing the value of the name property in the student object: <code>student.name</code> </li>
+  <li>Accessing the value of the Grad Year property in the student object: <code>student["Grad Year"]</code></li>
+  <li>Calling the function for the greeting property in the student object: <code>student.greeting()</code></li>
+  <li>Assessing the name property of the object in the Favorite Teacher property in student: <code>student["Favorite Teacher"].name</code></li>
+  <li>Access index zero in the array of the courseLoad property of the student object: <code>student.courseLoad[0]</code></li>
 </ol>
