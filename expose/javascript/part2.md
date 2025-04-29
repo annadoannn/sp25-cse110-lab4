@@ -44,7 +44,7 @@
 
 **Q12:**
 <ol type="A">
-  <li>Accessing the value of the name property: `student.name` </li>
+  <li>Accessing the value of the name property: <code>student.name</code> </li>
   <li>Second item</li>
   <li>Third item</li>
 </ol>
