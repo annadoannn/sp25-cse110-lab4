@@ -104,20 +104,19 @@ Inside the `modifyArray` function, we loop through the array inout and apply the
 <br>
 
 **Q18:**
-
 <br>
 
-[Modified Program](part2-question18.js)
+[Modified Code for Question 18](part2-question18.js)
 
 <br>
 
 **Q19:** 
 <br> 
 Output: <br>
-1 <br>
+`1 <br>
 4 <br>
 3 <br>
-2 <br>
+2` <br>
 
 JavaScript executes code synchronously first, so 1 and 4 are printed immediately. Then, setTimeout(..., 0) schedules console.log(3) to run after the current stack clears, so this executes next. Finally, setTimeout(..., 1000) delays console.log(2) by 1 second, so it's printed last.
 
