@@ -55,12 +55,72 @@
 
 **Q13: Arithmetic**
 <ol type ="A">
-    <li>Output: <code>'32'</code>. The (+) operand with a string triggers string concatenation. Thus, the number two is coerced to '2', and '3' + '2' becomes '32'. </li>
-    <li>Output: <code>2</code>. The (-) operand triggers numeric coercion. So '3' is converted to a number, then 3-2 = 1. </li>
+    <li>Output: <code>'32'</code>. The (+) operator with a string triggers string concatenation. Thus, the number 2 is coerced to '2', so '3' + '2' becomes '32'. </li>
+    <li>Output: <code>1</code>. The (-) operand triggers numeric coercion. So '3' is converted to number 3, then 3-2 = 1. </li>
     <li>Output: <code>3</code>. null is coerced into 0, so 3+0 is 3.</li>
-    <li>Output: <code>'3null'</code>. (+) with a string performs concatenation. Thus, null ic coerced into 'null'. So, '3' + 'null' = '3null'. </li>
-    <li>Output: <code>4</code>. True is coerced to 1, so 1 + 3 = 4. </li>
-    <li>Output: <code>0</code>. False is coerced into 0. Null is coerced into 0. Thus, 0 + 0 is 0. </li>
+    <li>Output: <code>'3null'</code>. (+) with a string performs string concatenation. Thus, null is coerced into 'null'. So, '3' + 'null' = '3null'. </li>
+    <li>Output: <code>4</code>. true is coerced to 1, so 1 + 3 = 4. </li>
+    <li>Output: <code>0</code>. false is coerced into 0. Null is coerced into 0. Thus, 0 + 0 is 0. </li>
     <li>Output: <code>'3undefined'</code>. The (+) operand with a string converts undefined into a string as well. So, we're concatenating two strings: '3' + 'undefined' and that becomes '3undefined'. </li>
-    <li>Output: <code>NaN</code>. undefined can't be coerced into a nmber, so '3' - undefined becomes 3 - NaN. As a result, we get NaN. </li>
-<ol>
+    <li>Output: <code>NaN</code>. The - operator tries to coerce undefined to a number, but fails, so the result is NaN (Not a Number).</li> 
+</ol>
+
+<br>
+
+**Q14: Comparison**
+<ol type="A">
+    <li>Output: <code>true</code>. '2' is coerced to number 2, so 2 > 1 is true. </li>
+    <li>Output: <code>false</code>. Both are strings, so the comparison is lexicographic (dictionary order). Since '2' comes after '1' in character order, '2' < '12' would return false.</li>
+    <li>Output: <code>true</code>. == performs type coercion. Thus, '2' becomes 2 and 2 == 2 is true.</li>
+    <li>Output: <code>false</code>. The ===  compares both type and value. Since one is a number and the other is a string, 2 === '2' is false. </li>
+    <li>Output: <code>false</code>. true is coerced to 1 with ==. Thus, 1 == 2 is false. </li>
+    <li>Output: <code>true</code>. Boolean(2) is true, because 2 is nonzero. Thus, true === true is true. </li>
+</ol>
+
+<br>
+
+**Q15: Explain the difference between the == and === operators.** 
+
+<br>
+
+`==` is loose equality. It allows type coercion, meaning it tries to convert both operands to the same type before comparing their values. 
+
+<br>
+
+`===` is strict equality. It does not perform type coercion. Thus, the operands must be the same type and value to be considered true. 
+
+<br>
+
+**Q16:** 
+<br>
+
+[Code Answer for Question 16](part2-question16.js)
+
+<br>
+
+**Q17:** The result will be an array `[2, 4, 6]`. The function `modifyArray` is called with an array [1, 2, 3] and a callback function `doSomething` that multiplies each number by 2.
+Inside the `modifyArray` function, we loop through the array inout and apply the callback to each element. So, doSomething(1) → 2, doSomething(2) → 4, and doSomething(3) → 6. Each result is pushed into the new array, `newArr`. The final returned array is [2, 4, 6].
+
+<br>
+
+**Q18:**
+
+<br>
+
+[Modified Program](part2-question18.js)
+
+<br>
+
+**Q19:** 
+<br> 
+Output: <br>
+1 <br>
+4 <br>
+3 <br>
+2 <br>
+
+JavaScript executes code synchronously first, so 1 and 4 are printed immediately. Then, setTimeout(..., 0) schedules console.log(3) to run after the current stack clears, so this executes next. Finally, setTimeout(..., 1000) delays console.log(2) by 1 second, so it's printed last.
+
+
+
+
