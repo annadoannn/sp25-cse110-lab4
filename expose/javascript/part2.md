@@ -42,7 +42,7 @@
 
 <br>
 
-**Q12:**
+**Q12: Data Types**
 <ol type="A">
   <li>Accessing the value of the name property in the student object: <code>student.name</code> </li>
   <li>Accessing the value of the Grad Year property in the student object: <code>student["Grad Year"]</code></li>
@@ -50,3 +50,17 @@
   <li>Assessing the name property of the object in the Favorite Teacher property in student: <code>student["Favorite Teacher"].name</code></li>
   <li>Access index zero in the array of the courseLoad property of the student object: <code>student.courseLoad[0]</code></li>
 </ol>
+
+<br>
+
+**Q13: Arithmetic**
+<ol type ="A">
+    <li>Output: <code>'32'</code>. The (+) operand with a string triggers string concatenation. Thus, the number two is coerced to '2', and '3' + '2' becomes '32'. </li>
+    <li>Output: <code>2</code>. The (-) operand triggers numeric coercion. So '3' is converted to a number, then 3-2 = 1. </li>
+    <li>Output: <code>3</code>. null is coerced into 0, so 3+0 is 3.</li>
+    <li>Output: <code>'3null'</code>. (+) with a string performs concatenation. Thus, null ic coerced into 'null'. So, '3' + 'null' = '3null'. </li>
+    <li>Output: <code>4</code>. True is coerced to 1, so 1 + 3 = 4. </li>
+    <li>Output: <code>0</code>. False is coerced into 0. Null is coerced into 0. Thus, 0 + 0 is 0. </li>
+    <li>Output: <code>'3undefined'</code>. The (+) operand with a string converts undefined into a string as well. So, we're concatenating two strings: '3' + 'undefined' and that becomes '3undefined'. </li>
+    <li>Output: <code>NaN</code>. undefined can't be coerced into a nmber, so '3' - undefined becomes 3 - NaN. As a result, we get NaN. </li>
+<ol>
