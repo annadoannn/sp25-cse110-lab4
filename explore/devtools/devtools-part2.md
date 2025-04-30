@@ -15,5 +15,3 @@ function calculateSum(num1, num2) {
 }
 
 ```
-
-[Screenshot of fix](expand/screenshots/fix.png)
