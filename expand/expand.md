@@ -5,7 +5,7 @@ JavaScript's asynchronous nature can be frustrating for developers because it in
 
 Loose typing in JavaScript is another challenge, as variables are not restricted to a single data type. This flexibility can lead to unexpected behavior when JavaScript automatically coerces values between types. For example, adding a string and a number may result in string concatenation rather than numerical addition. Such implicit conversions can cause logical errors that are difficult to detect during development.
 
-Lastly, the fact that JavaScript is tightly coupled to the web platform introduces its own set of issues. Differences in browser implementations and APIs can lead to inconsistent behavior across environments. Developers must account for browser compatibility, security constraints like CORS, and limitations in performance that come with running code on a wide variety of user devices.
+Lastly, the fact that JavaScript is deeply integrated with how browsers work can introduce its own set of issues. Differences in browser implementations and APIs can lead to inconsistent behavior across environments. Developers must account for browser compatibility, security constraints, and limitations in performance that come with running code on a wide variety of user devices.
 
 ---
 <br>
@@ -13,7 +13,7 @@ Lastly, the fact that JavaScript is tightly coupled to the web platform introduc
 **Q2: Related to the first question, why do you believe that the developer(s) who created JavaScript made it loosely typed? Why do you think they added asynchronous features?**
 <br>
 
-The creators of JavaScript designed it in a short time frame with the goal of making it accessible to a wide range of users, including those without formal programming backgrounds. Loose typing supports this goal by allowing developers to write code more quickly and flexibly without worrying about strict type declarations. This design choice made the language easier to learn and well-suited for rapid prototyping and experimentation.
+The creators of JavaScript designed it with the goal of making it accessible to a wide range of users. Loose typing supports this goal by allowing developers to write code more quickly and flexibly without worrying about strict type declarations. This design choice made the language easier to learn and well-suited for rapid prototyping and experimentation.
 
 Asynchronous features were included because JavaScript was intended to run in web browsers, which need to remain responsive to user input even while performing background tasks like fetching data. Blocking operations would freeze the user interface, resulting in a poor user experience. Asynchronous constructs such as event listeners and `setTimeout()` allow JavaScript to handle tasks non-blockingly, enabling smooth, interactive web applications.
 
@@ -48,4 +48,4 @@ This lab relates to our project because it emphasizes critical skills in debuggi
 
 Furthermore, understanding how asynchronous operations and DOM manipulation work at a low level gives us greater control over our application’s behavior. This lab helps reinforce the importance of clean, well-structured JavaScript code, and equips us with the skills to diagnose and resolve issues more efficiently during project development.
 
-<br>
+<br> 
